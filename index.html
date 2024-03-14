@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="freeCodeCamp Accessibility Quiz practice project" />
+    <title>Accessibility Quiz</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <!-- <img id="logo" src="https://cdn.freecodecamp.org/platform/universal/fcc_primary.svg" > -->
+      <h1>HTML/CSS Quiz</h1>
+      <nav>
+        <ul>
+          <li><a href="#student-info">INFO</a></li>
+          <li><a href="#html-questions">HTML</a></li>
+          <li><a href="#css-questions">CSS</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <form method="post" action="https://freecodecamp.org/practice-project/accessibility-quiz">
+        <section role="region" aria-labelledby="student-info">
+          <h2 id="student-info">Student Info</h2>
+          <div class="info">
+            <label for="student-name">Name:</label>
+            <input type="text" name="student-name" id="student-name" />
+          </div>
+          <div class="info">
+            <label for="student-email">Email:</label>
+            <input type="email" name="student-email" id="student-email" />
+          </div>
+          <div class="info">
+            <label for="birth-date">D.O.B.<span class="sr-only">(Date of Birth)</span></label>
+            <input type="date" name="birth-date" id="birth-date" />
+          </div>
+        </section>
+
+     <!-- HTML QUESTIONS -->
+        <section role="region" aria-labelledby="html-questions">
+          <h2 id="html-questions">HTML</h2>
+          <div class="question-block">
+            <p>1</p>
+            <fieldset class="question" name="html-question-one">
+              <legend>
+                What are the types of lists available in HTML?
+              </legend>
+              <ul class="answers-list">
+                <li>
+                  <label for="q1-a1">
+                    <input type="radio" id="q1-a1" name="q1" value="Ordered, Unordered" />
+                    Ordered, Unordered
+                  </label>
+                </li>
+                <li>
+                  <label for="q1-a2">
+                    <input type="radio" id="q1-a2" name="q1" value="Bulleted,numbered" />
+                    Bulleted,numbered
+                  </label>
+                </li>
+                <li>
+                  <label for="q1-a3">
+                    <input type="radio" id="q1-a3" name="q1" value="named,unnamed" />
+                    named,unnamed
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+
+
+          <div class="question-block">
+            <p>2</p>
+            <fieldset class="question" name="html-question-two">
+              <legend>
+                URL is an acronym for
+              </legend>
+              <ul class="answers-list">
+                <li>
+                  <label for="q2-a1">
+                    <input type="radio" id="q2-a1" name="q2" value="Universal resource locator" />
+                    Universal resource locator
+                  </label>
+                </li>
+                <li>
+                  <label for="q2-a2">
+                    <input type="radio" id="q2-a2" name="q2" value="Uniform research locator" />
+                    Uniform research locator
+                  </label>
+                </li>
+                <li>
+                  <label for="q2-a3">
+                    <input type="radio" id="q2-a3" name="q2" value=" Uniform resource locator" />
+                    Uniform resource locator
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+
+          <div class="question-block">
+            <p>3</p>
+            <fieldset class="question" name="html-question-three">
+              <legend>
+                HTML stands for
+              </legend>
+              <ul class="answers-list">
+                <li>
+                  <label for="q3-a1">
+                    <input type="radio" id="q3-a1" name="q3" value="Hyperdiaper Text Markup Lingo" />
+                     Hyperdiaper Text Markup Lingo
+                  </label>
+                </li>
+                <li>
+                  <label for="q3-a2">
+                    <input type="radio" id="q3-a2" name="q3" value="Hyper Text Markup Language" />
+                    Hyper Text Markup Language
+                  </label>
+                </li>
+                <li>
+                  <label for="q3-a3">
+                    <input type="radio" id="q3-a3" name="q3" value="Hyper Text Marking Language" />
+                    Hyper Text Marking Language
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+
+          <div class="question-block">
+            <p>4</p>
+            <fieldset class="question" name="html-question-four">
+              <legend>
+                Choose the correct HTML tag for the largest heading
+              </legend>
+              <ul class="answers-list">
+                <li>
+                  <label for="q4-a1">
+                    <input type="radio" id="q4-a1" name="q4" value="H6" />
+                     H6
+                  </label>
+                </li>
+                <li>
+                  <label for="q4-a2">
+                    <input type="radio" id="q4-a2" name="q4" value="H3" />
+                    H3
+                  </label>
+                </li>
+                <li>
+                  <label for="q4-a3">
+                    <input type="radio" id="q4-a3" name="q4" value="H1" />
+                    H1
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+
+          <div class="question-block">
+            <p>5</p>
+            <fieldset class="question" name="html-question-five">
+              <legend>
+                What does FTP stand for?
+              </legend>
+              <ul class="answers-list">
+                <li>
+                  <label for="q5-a1">
+                    <input type="radio" id="q5-a1" name="q5" value="Files To Put online" />
+                    Files To Put online
+                  </label>
+                </li>
+                <li>
+                  <label for="q5-a2">
+                    <input type="radio" id="q5-a2" name="q5" value="File Transfer Protocol" />
+                    File Transfer Protocol
+                  </label>
+                </li>
+                <li>
+                  <label for="q5-a3">
+                    <input type="radio" id="q5-a3" name="q5" value="File Transmitt Protocol" />
+                    File Transmitt Protocol
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+
+          <div class="question-block">
+            <p>6</p>
+            <fieldset class="question" name="html-question-six">
+              <legend>
+                There are ___ levels of heading in HTML
+              </legend>
+              <ul class="answers-list">
+                <li>
+                  <label for="q6-a1">
+                    <input type="radio" id="q6-a1" name="q6" value="Four" />
+                    Four
+                  </label>
+                </li>
+                <li>
+                  <label for="q6-a2">
+                    <input type="radio" id="q6-a2" name="q6" value=" Five" />
+                    Five
+                  </label>
+                </li>
+                <li>
+                  <label for="q5-a3">
+                    <input type="radio" id="q6-a3" name="q6" value="Six" />
+                    Six
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+
+
+
+
+
+          
+        </section>
+
+
+        <section role="region" aria-labelledby="css-questions">
+          <h2 id="css-questions">CSS</h2>
+          <div class="formrow">
+            <div class="question-block">
+              <label for="customer">Are you a frontend developer?</label>
+            </div>
+            <div class="answer">
+              <select name="customer" id="customer" required>
+                <option value="">Select an option</option>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+              </select>
+            </div>
+            <div class="question-block">
+              <label for="css-questions">Do you have any questions:</label>
+            </div>
+            <div class="answer">
+              <textarea id="css-questions" name="css-questions" rows="5" cols="24" placeholder="Who is flexbox..."></textarea>
+            </div>
+          </div>
+        </section>
+        <button type="submit">Send</button>
+      </form>
+    </main>
+    <footer>
+      <br class="Web-Development-Quiz">Web Development Quiz</br>
+      <br><br>
+    </footer>
+  </body>
+</html>
